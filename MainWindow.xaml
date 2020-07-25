@@ -1,0 +1,20 @@
+﻿<Window x:Class="NyssExcelLab2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NyssExcelLab2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="671.642" Width="1500">
+    <Grid Margin="0,0,-0.4,62.4">
+        <DataGrid x:Name="DataFromExcel" HorizontalAlignment="Left" Margin="10,10,0,-28" Width="1368" Loaded="OpenFile" CellEditEnding="ChangeLocalData" CurrentCellChanged="ChangeDataInGrid"/>
+        <Button Content="left" HorizontalAlignment="Left" Margin="1382,43,0,0" VerticalAlignment="Top" Width="106" Height="48" Click="Left_Button_Click"/>
+        <Button Content="right" HorizontalAlignment="Left" Margin="1382,126,0,0" VerticalAlignment="Top" Width="106" Height="48" Click="Right_Button_Click"/>
+        <Button Content="Short/All info" HorizontalAlignment="Left" Margin="1382,201,0,0" VerticalAlignment="Top" Width="106" Height="48" Click="ShortAllInfoChanged"/>
+        <Button Content="Update" HorizontalAlignment="Left" Margin="1381,288,0,0" VerticalAlignment="Top" Width="106" Height="48" Click="UpdateData"/>
+        <TextBlock x:Name="PageNum" HorizontalAlignment="Left" Margin="1409,101,0,0" TextWrapping="Wrap" Text="Page: 1" VerticalAlignment="Top"/>
+        <TextBox x:Name="PathToSave" HorizontalAlignment="Left" Margin="1378,487,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="28" Width="116"/>
+        <Button Content="SaveAs" HorizontalAlignment="Left" Margin="1378,520,0,0" VerticalAlignment="Top" Width="116" Height="33" Click="SaveFileAs"/>
+
+    </Grid>
+</Window>
